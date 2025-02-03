@@ -1,0 +1,36 @@
+.solution-card {
+    --solutionCardPadding: 24px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 440px;
+    padding: var(--solutionCardPadding);
+    border-radius: var(--border-radius);
+    background-color: rgba(255, 255, 255, 0.05);
+
+    &--big {
+        align-items: stretch;
+        row-gap: 64px;
+        padding: 40px;
+    }
+
+    &__image {
+
+        &--backdrop {
+            position: absolute;
+            z-index: -1;
+            right: var(--solutionCardPadding);
+            bottom: calc(var(--button-height) + var(--solutionCardPadding) + 11px);
+        }
+    }
+
+    &__tools {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        column-gap: 36px;
+    }       
+}

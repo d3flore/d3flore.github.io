@@ -1,0 +1,33 @@
+.input {
+    @include reset-button;
+    border-bottom: 1px solid var(--color-gray);
+    width: 100%;
+    height: var(--input-height);
+    padding: 6px;
+
+    
+    @include hover {
+        border-bottom: 1px solid var(--color-purple);
+    }
+
+    &:focus {
+        outline: none;
+        border-bottom: 2px solid var(--color-purple);
+    }
+
+    &::placeholder {
+        font-size: 14px;
+        line-height: 1.43;
+        letter-spacing: 0.28;
+        color: var(--color-light-gray);
+    }
+
+    &:focus::placeholder { 
+        opacity: 0; 
+    }
+
+    &--file {
+        opacity: 0; 
+    }
+
+}

@@ -1,0 +1,79 @@
+.contact-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 74px 109px 54px 80px;
+    min-height: 506px;
+    border-radius: var(--border-radius-big);
+    color: var(--color-gray);
+    background-color: var(--color-white);
+
+    &--inner {
+        padding-top: 50px;
+        padding-bottom: 13px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        font-weight: 400;
+        max-width: 404px;
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: 0.2px;
+    }
+
+    &__title {
+        margin-bottom: 22px;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 1.28;
+        color: var(--color-dark-gray);
+    }
+
+    &__description {
+        margin-bottom: 14px;
+        letter-spacing: 0.4px;
+    }
+
+    &__email {
+        line-height: 1.33;
+        letter-spacing: 0.4px;
+    }
+
+    &__link {
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: var(--color-purple);   
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        margin-bottom: 10px;
+        color: var(--color-light-gray);
+    }
+
+    &__types {
+        align-self: flex-end;
+        font-size: 10px;
+        line-height: 1.4;
+        letter-spacing: 0.4px;
+    }
+
+    &__button {
+        margin-top: auto;
+        width: 155px;
+        height: 56px;
+        align-self: flex-end;
+    }
+}

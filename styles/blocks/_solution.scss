@@ -1,0 +1,14 @@
+.solution {
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    &__item:first-child {
+        grid-column: 1 / -1;
+    }
+}

@@ -1,0 +1,23 @@
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--color-font);
+    background-color: var(--color-background);
+
+    &::after {
+        background-color: var(--color-purple);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+}
