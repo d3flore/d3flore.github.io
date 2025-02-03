@@ -41,7 +41,7 @@
                 height: 2px;
                 border-radius: 3px;
                 background-color: currentColor;
-                transition-duration: var(--transition-duration);
+                transition: 300ms;
             }
         }
     }
